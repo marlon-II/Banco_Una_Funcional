@@ -4,10 +4,21 @@
  */
 package service;
 
+import com.UnaBanco.BancoUnaFuncional.data.ClienteRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
 /**
  *
- * @author Shirley
+ * @author Marlon
  */
+
+@Service
+
 public class ClienteService {
+    
+    @Autowired
+    
+    ClienteRepository clienteRepository;
     
 }
