@@ -4,6 +4,7 @@
  */
 package com.UnaBanco.BancoUnaFuncional.data;
 
+import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
@@ -12,4 +13,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface HistoricoRepository extends JpaRepository<HistoricoEntity, Integer> {
     
+    List<HistoricoEntity> findByClienteIdCliente(Integer idCliente);
 }

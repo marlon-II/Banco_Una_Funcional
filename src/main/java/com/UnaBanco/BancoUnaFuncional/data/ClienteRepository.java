@@ -10,12 +10,13 @@ package com.UnaBanco.BancoUnaFuncional.data;
  * @author Marlon
  */
 
+import java.util.Optional;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ClienteRepository extends JpaRepository<ClienteEntity, Integer>  {
 
-  
+   Optional<ClienteEntity> findByLoginAndSenha(String login, String senha);
     
 }

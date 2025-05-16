@@ -12,8 +12,10 @@ import jakarta.persistence.ManyToOne;
 
 /**
  *
- * @author Shirley
+ * @author Marlon
  */
+
+
 public class HistoricoEntity {
     
     @Id
