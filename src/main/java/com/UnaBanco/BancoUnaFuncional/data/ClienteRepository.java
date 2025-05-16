@@ -7,9 +7,13 @@ package com.UnaBanco.BancoUnaFuncional.data;
 
 /**
  *
- * @author Shirley
+ * @author Marlon
  */
 
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
 public interface ClienteRepository extends JpaRepository<ClienteEntity, Integer>  {
 
 }
